@@ -18,7 +18,7 @@ namespace ConsoleApplication3
     public class FolderAccess : DbHelper 
     {
         [Id(Name = "SetId")]
-        public Guid SetId { get; set; }
+        public Guid FolderId { get; set; }
 
         [Column(Name = "GroupName")]
         public string GroupName { get; set; }
@@ -29,7 +29,7 @@ namespace ConsoleApplication3
         [Column(Name = "AccessTypeName",IsEntityRef=true)]
         public string AccessTypeName { get; set; }
 
-        public SetAccess(DataSource ds)
+        public FolderAccess(DataSource ds)
             : base(ds)
         {
 
