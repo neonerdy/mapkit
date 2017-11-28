@@ -1,5 +1,7 @@
 # mapkit
 
+Lightweight data mapper framework
+
 ## How to Use
 
 
